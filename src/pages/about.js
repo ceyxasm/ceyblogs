@@ -1,9 +1,21 @@
 import * as React from 'react';
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 //import { Seo } from "../components/seo.js";
 import  Layout  from "../components/layout.js";
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-export default function AboutPage()
+export const query= graphql`
+query Cocktailquery{
+  file( name: { eq: "cocktail" }) {
+    childImageSharp {
+      gatsbyImageData(placeholder: DOMINANT_COLOR)
+      }
+     }
+    }
+   `;
+
+
+export default function AboutPage({ data} )
 {
 	return(
 /*		<>
@@ -20,6 +32,10 @@ export default function AboutPage()
 		< Layout
 		title="about"
 		description="info for the page" > 
+		<GatsbyImage
+		  image={getImage(data.file)}
+		  alt="cocktail hai bhjai"
+		/>
 			<h3> okay about page me layout integrated</h3>
 			< Link to="/" >Home </Link>
 		</Layout>

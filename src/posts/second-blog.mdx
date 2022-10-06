@@ -9,7 +9,23 @@ export default ({children}) =>(
 <Layout> {children}</Layout>
 );
 
+import {graphql } from 'gatsby';
+import { GatsbyImage, getImage} from 'gatsby-plugin-image';
+
+export const query= graphql`
+query smash{
+	file( name: {eq: "smashburger"}){
+		childImageSharp{
+			gatsbyImageData( placeholder: DOMINANT_COLOR)
+		}
+	}	
+}`;
+
 # Hello2
 
 ### sexsux
 - this time i will do ur mom too
+
+<GatsbyImage image={getImage(props.data.file)}
+	     alt="idek what a smash burger is but ok"
+/>
