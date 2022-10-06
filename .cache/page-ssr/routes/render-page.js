@@ -604,12 +604,16 @@ function getForwards(collectedScripts) {
 exports.components = {
   "component---cache-dev-404-page-js": () => __webpack_require__.e(/*! import() | component---cache-dev-404-page-js */ "component---cache-dev-404-page-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../dev-404-page.js?export=default */ "./.cache/dev-404-page.js?export=default")),
   "component---src-pages-about-js": () => __webpack_require__.e(/*! import() | component---src-pages-about-js */ "component---src-pages-about-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/about.js?export=default */ "./src/pages/about.js?export=default")),
-  "component---src-pages-index-js": () => __webpack_require__.e(/*! import() | component---src-pages-index-js */ "component---src-pages-index-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/index.js?export=default */ "./src/pages/index.js?export=default"))
+  "component---src-pages-index-js": () => __webpack_require__.e(/*! import() | component---src-pages-index-js */ "component---src-pages-index-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/index.js?export=default */ "./src/pages/index.js?export=default")),
+  "component---src-posts-first-blog-mdx": () => __webpack_require__.e(/*! import() | component---src-posts-first-blog-mdx */ "component---src-posts-first-blog-mdx").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/posts/first-blog.mdx?export=default */ "./src/posts/first-blog.mdx?export=default")),
+  "component---src-posts-second-blog-mdx": () => __webpack_require__.e(/*! import() | component---src-posts-second-blog-mdx */ "component---src-posts-second-blog-mdx").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/posts/second-blog.mdx?export=default */ "./src/posts/second-blog.mdx?export=default"))
 };
 exports.head = {
   "component---cache-dev-404-page-js": () => __webpack_require__.e(/*! import() | component---cache-dev-404-page-jshead */ "component---cache-dev-404-page-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../dev-404-page.js?export=head */ "./.cache/dev-404-page.js?export=head")),
   "component---src-pages-about-js": () => __webpack_require__.e(/*! import() | component---src-pages-about-jshead */ "component---src-pages-about-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/about.js?export=head */ "./src/pages/about.js?export=head")),
-  "component---src-pages-index-js": () => __webpack_require__.e(/*! import() | component---src-pages-index-jshead */ "component---src-pages-index-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/index.js?export=head */ "./src/pages/index.js?export=head"))
+  "component---src-pages-index-js": () => __webpack_require__.e(/*! import() | component---src-pages-index-jshead */ "component---src-pages-index-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/index.js?export=head */ "./src/pages/index.js?export=head")),
+  "component---src-posts-first-blog-mdx": () => __webpack_require__.e(/*! import() | component---src-posts-first-blog-mdxhead */ "component---src-posts-first-blog-mdxhead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/posts/first-blog.mdx?export=head */ "./src/posts/first-blog.mdx?export=head")),
+  "component---src-posts-second-blog-mdx": () => __webpack_require__.e(/*! import() | component---src-posts-second-blog-mdxhead */ "component---src-posts-second-blog-mdxhead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/posts/second-blog.mdx?export=head */ "./src/posts/second-blog.mdx?export=head"))
 };
 
 /***/ }),

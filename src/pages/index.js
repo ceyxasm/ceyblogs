@@ -1,6 +1,6 @@
 import * as React from 'react';
-//import { Link, useStaticQuery, graphql } from "gatsby";
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
+//import { Link } from "gatsby";
 //import {Seo} from '../components/seo.js';
 import  Layout from "../components/layout.js";
 
@@ -18,6 +18,25 @@ export default function IndexPage()
 
 	const meta = data?.site?.siteMetadata ?? {};
 */
+
+
+	const data= useStaticQuery(graphql`
+	query GetBlogs{
+	  allMdx{
+	    nodes{
+	      id
+	      frontmatter{
+	        title
+		slug
+		description
+		date(fromNow: true)
+		}
+	      }
+	    }
+	  }
+	 `);
+
+	const posts= data.allMdx.nodes;
 	return (
 /*		<>
 		<Seo />
@@ -36,6 +55,17 @@ export default function IndexPage()
 		<Layout> 
 		 <h1> Okay layouting is done </h1>
        		 <h2> testing paging?? </h2>
+		 <Link to="/about">about page</Link>
+
+		<h2> Check out my recent blogs</h2>
+		<ul>
+		  {posts.map((post) => (
+			  <li key= {post.id}>
+			    <Link to={post.frontmatter.slug}>{post.frontmatter.title} </Link>{' '}
+			    <small>posted {post.frontmatter.date}</small>
+			  </li>
+	          ))}
+		</ul>
 		</Layout>
 	);
 }

@@ -1,11 +1,17 @@
 ---
-date: 06-10-2022
-title: first blog
-description: first blog via mdx
+title: first-blog
+description: first blog with mdx integration; pls work
+slug: first-blog
 ---
+import Layout from '../components/layout.js';
+export default ({children}) => (
+<Layout>
+	{children}
+</Layout>
+);
 
 
 # Hello
 this is my first blog
 ## todos?
-[] - momo
+- momo

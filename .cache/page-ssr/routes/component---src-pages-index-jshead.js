@@ -2147,13 +2147,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ IndexPage)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _components_layout_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout.js */ "./src/components/layout.js");
- //import { Link, useStaticQuery, graphql } from "gatsby";
+/* harmony import */ var _public_page_data_sq_d_1863492941_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/1863492941.json */ "./public/page-data/sq/d/1863492941.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _components_layout_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout.js */ "./src/components/layout.js");
 
- //import {Seo} from '../components/seo.js';
+
+ //import { Link } from "gatsby";
+//import {Seo} from '../components/seo.js';
 
 
 function IndexPage() {
@@ -2169,6 +2171,8 @@ function IndexPage() {
   
   	const meta = data?.site?.siteMetadata ?? {};
   */
+  const data = _public_page_data_sq_d_1863492941_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const posts = data.allMdx.nodes;
   return (
     /*#__PURE__*/
 
@@ -2185,7 +2189,13 @@ function IndexPage() {
     		</main>
     		</>
     */
-    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout_js__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, " Okay layouting is done "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, " testing paging?? "))
+    react__WEBPACK_IMPORTED_MODULE_1__.createElement(_components_layout_js__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h1", null, " Okay layouting is done "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h2", null, " testing paging?? "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+      to: "/about"
+    }, "about page"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h2", null, " Check out my recent blogs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", null, posts.map(post => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", {
+      key: post.id
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+      to: post.frontmatter.slug
+    }, post.frontmatter.title, " "), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("small", null, "posted ", post.frontmatter.date)))))
   );
 }
 
@@ -2400,6 +2410,17 @@ module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"blogs","s
 
 "use strict";
 module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"blogs"}}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/1863492941.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/1863492941.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"allMdx":{"nodes":[{"id":"c850c583-3bb7-5102-9aed-9eb9c74fc041","frontmatter":{"title":null,"slug":null,"description":null,"date":null}},{"id":"a1d59404-3b31-5b55-8394-edc61fba248f","frontmatter":{"title":"second blog","slug":"second-blog","description":"this is second garbage blog only for testing purposes","date":"17 hours ago"}}]}}}');
 
 /***/ })
 
