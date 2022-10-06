@@ -25,6 +25,7 @@ export function Seo(props) {
 
 	return(
 		<Helmet>
+		
 		  <title>{title}</title>
 		  <meta name="description" content={description} />
 		  <link rel="canonical" href={siteUrl} />
@@ -40,6 +41,7 @@ export function Seo(props) {
 		  <meta name="twitter:title" content={title} />
 		  <meta name="twitter:description" content={description} />
 		  {image && <meta name="twitter:image" content={image} />}
+		
 		</Helmet>
 	);
 }
