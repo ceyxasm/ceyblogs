@@ -3,6 +3,10 @@ var plugins = [{
       plugin: require('/home/ceyxasm/code/ceyblogs/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
+      name: 'gatsby-plugin-image',
+      plugin: require('/home/ceyxasm/code/ceyblogs/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
+      options: {"plugins":[]},
+    },{
       name: 'partytown',
       plugin: require('/home/ceyxasm/code/ceyblogs/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},

@@ -1,8 +1,11 @@
 import * as React from 'react';
 import { Link, useStaticQuery, graphql } from "gatsby";
+import { StaticImage } from 'gatsby-plugin-image';
 //import { Link } from "gatsby";
 //import {Seo} from '../components/seo.js';
 import  Layout from "../components/layout.js";
+import { imageWrapper } from '../styles/index.module.css';
+
 
 export default function IndexPage() 
 {
@@ -53,6 +56,15 @@ export default function IndexPage()
 */
 		
 		<Layout> 
+		  <div className={imageWrapper}>
+		     <StaticImage
+			src="../images/cocktail.jpg"
+			alt="cocktail! enjoy."
+			placeholder="dominantColor"
+			width={300}
+			height={300}
+		  	/>
+		  </div>
 		 <h1> Okay layouting is done </h1>
        		 <h2> testing paging?? </h2>
 		 <Link to="/about">about page</Link>
