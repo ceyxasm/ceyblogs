@@ -1,1 +1,10 @@
+0. revisit the pipeline
 1. please edit gatsby-config.txt
+2. beautify the blog
+	global css & color combo inspection
+3. channelize the workflow
+4. make it public
+5. add init blogs
+6. add nav/footer/easter eggs
+7. connect/integrate portfolio
+8. add frog poem
