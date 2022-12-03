@@ -42,7 +42,7 @@ export default function IndexPage()
 		 <h1> Hello... Welcome to ceyblogs </h1>
        		 <h2> I am still wondering what will go here.  Why do not you come here later?? </h2>
 		 <Link to="/about" className="Button1">About</Link>
-		 <Link to="https://ceyxasm.github.io/ceyxasm/" className="Button1">My Portfolio</Link>
+		 <Link to="https://ceyxasm.github.io/ceyxasm/" className="Button1" target="_new" >My Portfolio</Link>
 		<h2> Check out my recent blogs</h2>
 		<ul>
 		  {posts.map((post) => (

@@ -9,6 +9,7 @@
 	box-sizing: border-box;
 }
 
+
 html, body {
 
 	color: var(--gray);
@@ -28,6 +29,37 @@ body{
 
 h1, h2, h3, h4, h5, h6{
 	color: var(--black);
+}
+
+.Link1{
+	color: blue;
+}
+
+.Button1{
+background: #2b5876;  /* fallback for old browsers */
+
+	  border: 2px ;
+  	color: white;
+  	padding: 8px 22px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+	border-radius: 8px;
+	margin: 4px 2px;
+}
+
+.Button:hover{
+	background-color: white; /* Green */
+        border: 2px solid #4CAF50;
+        color: #4CAF50;
+        padding: 8px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 10px;
+	margin: 4px 2px;
 }
 
 #gatsby-focus-wrapper{
