@@ -1,0 +1,62 @@
+---
+title: the frog poem
+description: this is a poem on frog authored by mahima pradhan
+slug: the-frog-poem
+date: 2022-12-03
+---
+import Layout from '../components/layout.js';
+export default ({children}) => (
+<Layout>
+	{children}
+</Layout>
+);
+
+# The frog poem
+~MP
+
+import {graphql } from 'gatsby';
+import { GatsbyImage, getImage} from 'gatsby-plugin-image';
+
+export const query= graphql`
+query the_frog{
+        file( name: {eq: "the_frog"}){
+                childImageSharp{
+                        gatsbyImageData( placeholder: DOMINANT_COLOR)
+                }
+        }
+}`;
+
+<GatsbyImage image={getImage(props.data.file)}
+             alt="PS: its a frog"
+/>
+
+
+They look slimy and yucky\
+But they are surprisingly dry\
+Just like your mom\
+On that night back in July
+
+They are squishy and soft\
+And a little slippery\
+No I am not talking about b4lls or b00bs\
+I am talking about something that lives in our campus’s greenery
+
+They are hard to catch\
+They hop away fast\
+Try catching one\
+I’m sure you will have a blast!
+
+Some are fat some are thin\
+They do absolutely nothing\
+Hold them in your palm or put them in your pocket\
+They don’t care because they have 0 survival instincts
+
+You can do whatever you want with them\
+Make them a pet and watch them grow\
+Take them on walks, feed them insects\
+Make them a ball to play catch and throw!
+
+Did you figure out who I am talking about?\
+I’m pretty sure you got it dawgs\
+Congratulations, you are correct\
+I am talking about frogs!
