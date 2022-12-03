@@ -9,19 +9,6 @@ import { imageWrapper } from '../styles/index.module.css';
 
 export default function IndexPage() 
 {
-/*	const data = useStaticQuery(graphql`
-	query getTitle{
-	   site{
-	      siteMetadata{
-		title
-	      }
-	   }
-	}
-		`);
-
-	const meta = data?.site?.siteMetadata ?? {};
-*/
-
 
 	const data= useStaticQuery(graphql`
 	query GetBlogs{
@@ -41,32 +28,19 @@ export default function IndexPage()
 
 	const posts= data.allMdx.nodes;
 	return (
-/*		<>
-		<Seo />
-		<header>
-			<Link to="/"> {meta.title} </Link>
-		</header>
-
-		<main>
-		<h1> hello this is my page of blog. </h1>
-		<h2>hoping render is real-time : test2</h2>
-		<Link to="/about">About page </Link>
-		</main>
-		</>
-*/
 		
 		<Layout> 
 		  <div className={imageWrapper}>
 		     <StaticImage
-			src="../images/cocktail.jpg"
-			alt="cocktail! enjoy."
+			src="../images/index_img.jpg"
+			alt="profile picture"
 			placeholder="dominantColor"
 			width={300}
 			height={300}
 		  	/>
 		  </div>
-		 <h1> Okay layouting is done </h1>
-       		 <h2> testing paging?? </h2>
+		 <h1> Hello... Welcome to ceyblogs </h1>
+       		 <h2> I am still wondering what will go here.  Why do not you come here later?? </h2>
 		 <Link to="/about">about page</Link>
 
 		<h2> Check out my recent blogs</h2>
