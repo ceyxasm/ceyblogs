@@ -1,9 +1,9 @@
 module.exports = {
 	siteMetadata: {
-		siteUrl: "http://www.domain.com",
-		title: "blogs",
-		description: "to free my mind",
-		image: "something something"
+		siteUrl: "https://ceyblogs.netlify.app/",
+		title: "ceyblogs",
+		description: "this is my personal blog site :)",
+		image: "/images/ceyblogs.png",
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
