@@ -1,0 +1,34 @@
+---
+date: 2022-12-02
+title: How to blog
+description: in this blog I introduce you to ceyblogs and give a tutorial on how to blog here
+slug: how-to-blog
+---
+import Layout from '../components/layout.js';
+export default ({children}) =>(
+<Layout> {children}</Layout>
+);
+
+import {graphql } from 'gatsby';
+import { GatsbyImage, getImage} from 'gatsby-plugin-image';
+
+export const query= graphql`
+query page_meta{
+	file( name: {eq: "page_metadata"}){
+		childImageSharp{
+			gatsbyImageData( placeholder: DOMINANT_COLOR)
+		}
+	}	
+}`;
+
+
+### Template
+This is a basic template.
+- This is a bullet point
+<GatsbyImage image={getImage(props.data.file)}
+             alt="page metadata"
+/>
+![layout](../images/how2blog/layout.png)
+
+
+
