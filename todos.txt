@@ -1,6 +1,5 @@
 2. beautify the blog
 	global css & color combo inspection
-3. channelize the workflow
 6. add nav/footer/easter eggs
-7. connect/integrate portfolio
 9. create README
+10. write about gdsc expo
